@@ -65,11 +65,11 @@ Winery/
    
 2. Compile o projeto:
   ```bash
-  mvn clean compile
+    mvn clean compile
   ```
 3. Execute a publicação do serviço:
   ```bash
-  mvn exec:java -Dexec.mainClass="br.com.fiap.winery.WineStockServicePublisher"
+    mvn exec:java -Dexec.mainClass="br.com.fiap.winery.WineStockServicePublisher"
   ```
 4. Verifique no navegador:
 
@@ -81,20 +81,20 @@ Winery/
 
 1. Acesse a pasta do Consumer:
 ```bash
-cd Winery/Consumer
+  cd Winery/Consumer
 ```
 2. Gere os artefatos a partir do WSDL:
 (se configurado no pom.xml, apenas execute)
 ```bash
-mvn generate-sources
+  mvn generate-sources
 ```
 3. Compile o projeto:
 ```bash
-mvn clean compile
+  mvn clean compile
 ```
 4. Execute a aplicação cliente:
 ```bash
-mvn exec:java -Dexec.mainClass="br.com.fiap.winery.ApplicationClient1"
+  mvn exec:java -Dexec.mainClass="br.com.fiap.winery.ApplicationClient1"
 ```
 📦 Dependências Importantes
 <dependency>
