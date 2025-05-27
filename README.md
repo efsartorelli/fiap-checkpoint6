@@ -64,12 +64,12 @@ Winery/
    cd Winery/Publisher
    
 2. Compile o projeto:
-
-mvn clean compile
+  ```bash
+  mvn clean compile
 
 3. Execute a publicação do serviço:
-
-mvn exec:java -Dexec.mainClass="br.com.fiap.winery.WineStockServicePublisher"
+  ```bash
+  mvn exec:java -Dexec.mainClass="br.com.fiap.winery.WineStockServicePublisher"
 
 4. Verifique no navegador:
 
