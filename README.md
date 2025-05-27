@@ -66,11 +66,11 @@ Winery/
 2. Compile o projeto:
   ```bash
   mvn clean compile
-
+  ```
 3. Execute a publicação do serviço:
   ```bash
   mvn exec:java -Dexec.mainClass="br.com.fiap.winery.WineStockServicePublisher"
-
+  ```
 4. Verifique no navegador:
 
 ➡️ http://localhost:8085/WineStockService?wsdl
@@ -80,22 +80,22 @@ Winery/
 2. Consumer (Cliente SOAP)
 
 1. Acesse a pasta do Consumer:
-
+```bash
 cd Winery/Consumer
-
+```
 2. Gere os artefatos a partir do WSDL:
 (se configurado no pom.xml, apenas execute)
-
+```bash
 mvn generate-sources
-
+```
 3. Compile o projeto:
-
+```bash
 mvn clean compile
-
+```
 4. Execute a aplicação cliente:
-
+```bash
 mvn exec:java -Dexec.mainClass="br.com.fiap.winery.ApplicationClient1"
-
+```
 📦 Dependências Importantes
 <dependency>
     <groupId>com.sun.xml.ws</groupId>
